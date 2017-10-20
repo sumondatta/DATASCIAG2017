@@ -9,3 +9,8 @@
 #This analysis is intended to categorize the ear length and get the type of sequences 
 #of each id and categorize them by length
 
+get_size_class <- function(ear_length){
+   # Calculate the size class for one or more earth lengths
+   ear_lengths <- ifelse(ear_length > 10, "large", "small")
+   return(ear_lengths)
+}
