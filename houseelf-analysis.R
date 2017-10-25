@@ -44,3 +44,7 @@ get_size_class <- function(ear_length){
 print (ear_class <- get_size_class(elf$earlength))
 
 print (combined_data <- data.frame(elf$id, ear_class, gc_content))
+
+write.csv (combined_data, "./elf-data_final.csv")
+
+#END OF CODE
