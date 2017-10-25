@@ -34,10 +34,13 @@ gc_cont <- function (seq){
 
 print (gc_content <- gc_cont (elf$dnaseq))
 
-=======
+#part 7 Pulling and pushing
+
 get_size_class <- function(ear_length){
    # Calculate the size class for one or more earth lengths
    ear_lengths <- ifelse(ear_length > 10, "large", "small")
    return(ear_lengths)
 }
->>>>>>> 53a9688a41dd8f9aad3087e9152dae856fb5d898
+print (ear_class <- get_size_class(elf$earlength))
+
+print (combined_data <- data.frame(elf$id, ear_class, gc_content))
