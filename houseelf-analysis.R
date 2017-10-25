@@ -9,6 +9,7 @@
 #This analysis is intended to categorize the ear length and get the type of sequences 
 #of each id and categorize them by length
 
+<<<<<<< HEAD
 #part 3: importing data
 
 elf<-read.csv("./data/houseelf_earlength_dna_data_1.csv", header = TRUE, sep = ",")
@@ -33,3 +34,10 @@ gc_cont <- function (seq){
 
 print (gc_content <- gc_cont (elf$dnaseq))
 
+=======
+get_size_class <- function(ear_length){
+   # Calculate the size class for one or more earth lengths
+   ear_lengths <- ifelse(ear_length > 10, "large", "small")
+   return(ear_lengths)
+}
+>>>>>>> 53a9688a41dd8f9aad3087e9152dae856fb5d898
