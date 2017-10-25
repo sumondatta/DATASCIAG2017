@@ -28,8 +28,8 @@ library (stringr)
 gc_cont <- function (seq){
   Gs <- str_count (str_to_upper(seq), "G")
   Cs <- str_count(str_to_upper(seq), "C")
-  gc_content <- (Gs + Cs) / (str_length(seq)) * 100
-  return (gc_content)
+  gc_content_any <- (Gs + Cs) / (str_length(seq)) * 100
+  return (gc_content_any)
 }
 
 print (gc_content <- gc_cont (elf$dnaseq))
